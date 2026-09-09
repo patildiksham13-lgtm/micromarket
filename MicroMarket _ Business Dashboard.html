@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5501/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MicroMarket | Business Dashboard</title>
+  <link rel="stylesheet" href="./MicroMarket _ Business Dashboard_files/style.css">
+</head>
+<body>
+
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">M</div>
+        <div>
+          <h2>MicroMarket</h2>
+          <span>Business workspace</span>
+        </div>
+      </div>
+
+      <nav class="navigation">
+        <button class="nav-item active" data-page="dashboard">
+          <span>⌂</span> Dashboard
+        </button>
+        <button class="nav-item" data-page="products">
+          <span>▣</span> Products
+        </button>
+        <button class="nav-item" data-page="orders">
+          <span>◷</span> Orders
+        </button>
+        <button class="nav-item" data-page="customers">
+          <span>♙</span> Customers
+        </button>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="business-mini">
+          <div class="avatar">HB</div>
+          <div>
+            <strong>Home Bakery</strong>
+            <span>Business owner</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Wednesday, September 9</p>
+          <h1 id="page-title">Good morning, Diksha</h1>
+          <p class="subtitle">Here’s what’s happening with your business today.</p>
+        </div>
+
+        <button class="profile-button">
+          <div class="avatar">D</div>
+          <span>Diksha</span>
+          <span class="chevron">⌄</span>
+        </button>
+      </header>
+
+      <section id="dashboard-page" class="page active-page">
+
+        <div class="dashboard-heading">
+          <div>
+            <h2>Overview</h2>
+            <p>Track your business performance at a glance.</p>
+          </div>
+          <button class="primary-button" id="add-order-btn">＋ New order</button>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-top">
+              <span>Total revenue</span>
+              <div class="stat-icon purple">₹</div>
+            </div>
+            <h3>₹24,850</h3>
+            <p class="positive">↑ 12.5% <span>vs last month</span></p>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-top">
+              <span>Total orders</span>
+              <div class="stat-icon blue">▤</div>
+            </div>
+            <h3>48</h3>
+            <p class="positive">↑ 8.2% <span>vs last month</span></p>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-top">
+              <span>Products</span>
+              <div class="stat-icon orange">▣</div>
+            </div>
+            <h3>12</h3>
+            <p class="neutral">Active products</p>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-top">
+              <span>Customers</span>
+              <div class="stat-icon green">♙</div>
+            </div>
+            <h3>36</h3>
+            <p class="positive">↑ 5.4% <span>vs last month</span></p>
+          </div>
+        </div>
+
+        <div class="content-grid">
+          <div class="panel">
+            <div class="panel-header">
+              <div>
+                <h3>Recent orders</h3>
+                <p>Keep track of your latest sales.</p>
+              </div>
+              <button class="text-button" id="view-orders-btn">View all →</button>
+            </div>
+
+            <div class="order-list">
+              <div class="order-row">
+                <div class="order-product">
+                  <div class="product-thumb cake">🎂</div>
+                  <div>
+                    <strong>Chocolate Cake</strong>
+                    <span>Order #001 · Today</span>
+                  </div>
+                </div>
+                <div class="order-right">
+                  <strong>₹850</strong>
+                  <span class="status preparing">Preparing</span>
+                </div>
+              </div>
+
+              <div class="order-row">
+                <div class="order-product">
+                  <div class="product-thumb hamper">🎁</div>
+                  <div>
+                    <strong>Birthday Gift Hamper</strong>
+                    <span>Order #002 · Today</span>
+                  </div>
+                </div>
+                <div class="order-right">
+                  <strong>₹1,200</strong>
+                  <span class="status delivered">Delivered</span>
+                </div>
+              </div>
+
+              <div class="order-row">
+                <div class="order-product">
+                  <div class="product-thumb cookies">🍪</div>
+                  <div>
+                    <strong>Cookie Box</strong>
+                    <span>Order #003 · Yesterday</span>
+                  </div>
+                </div>
+                <div class="order-right">
+                  <strong>₹450</strong>
+                  <span class="status pending">Pending</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <div>
+                <h3>Quick actions</h3>
+                <p>Manage your business faster.</p>
+              </div>
+            </div>
+
+            <div class="quick-actions">
+              <button class="quick-action" id="add-product-btn">
+                <div class="quick-icon purple">＋</div>
+                <div>
+                  <strong>Add a product</strong>
+                  <span>Create a new product listing.</span>
+                </div>
+                <span class="arrow">→</span>
+              </button>
+
+              <button class="quick-action" id="manage-orders-btn">
+                <div class="quick-icon blue">◷</div>
+                <div>
+                  <strong>Manage orders</strong>
+                  <span>Update your order status.</span>
+                </div>
+                <span class="arrow">→</span>
+              </button>
+
+              <button class="quick-action" id="add-customer-btn">
+                <div class="quick-icon green">♙</div>
+                <div>
+                  <strong>Add a customer</strong>
+                  <span>Save customer information.</span>
+                </div>
+                <span class="arrow">→</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      &lt;<section id="products-page" class="page">
+
+  <div class="dashboard-heading">
+    <div>
+      <h2>Products</h2>
+      <p>Manage your product catalog.</p>
+    </div>
+
+    <button class="primary-button" id="products-add-btn">
+      ＋ Add product
+    </button>
+  </div>
+
+  <div class="products-toolbar">
+    <div class="search-box">
+      <span>⌕</span>
+      <input type="text" id="product-search" placeholder="Search products...">
+    </div>
+
+    <select id="product-category">
+      <option value="all">All categories</option>
+      <option value="Bakery">Bakery</option>
+      <option value="Gift">Gift</option>
+      <option value="Handmade">Handmade</option>
+    </select>
+  </div>
+
+  <div class="products-grid" id="products-grid"><div class="product-card">
+      <div class="product-card-top">
+        <div class="product-card-icon">🎂</div>
+        <span class="product-category">Bakery</span>
+      </div>
+
+      <h3>Chocolate Cake</h3>
+      <p>Rich chocolate cake for special occasions.</p>
+
+      <div class="product-card-bottom">
+        <span class="product-price">₹850</span>
+        <span class="product-category">Available</span>
+      </div>
+    </div><div class="product-card">
+      <div class="product-card-top">
+        <div class="product-card-icon">🎁</div>
+        <span class="product-category">Gift</span>
+      </div>
+
+      <h3>Birthday Gift Hamper</h3>
+      <p>A thoughtful hamper for celebrations.</p>
+
+      <div class="product-card-bottom">
+        <span class="product-price">₹1200</span>
+        <span class="product-category">Available</span>
+      </div>
+    </div><div class="product-card">
+      <div class="product-card-top">
+        <div class="product-card-icon">🍪</div>
+        <span class="product-category">Bakery</span>
+      </div>
+
+      <h3>Cookie Box</h3>
+      <p>Freshly baked assorted cookies.</p>
+
+      <div class="product-card-bottom">
+        <span class="product-price">₹450</span>
+        <span class="product-category">Available</span>
+      </div>
+    </div></div>
+
+</section>
+
+      <section id="orders-page" class="page">
+        <div class="dashboard-heading">
+          <div>
+            <h2>Orders</h2>
+            <p>Track and manage customer orders.</p>
+          </div>
+          <button class="primary-button" id="orders-add-btn">＋ New order</button>
+        </div>
+        <div class="empty-state">
+          <div class="empty-icon">◷</div>
+          <h3>Your orders will appear here</h3>
+          <p>Keep track of every order from one place.</p>
+          <button class="primary-button" id="empty-add-order">Create your first order</button>
+        </div>
+      </section>
+
+      <section id="customers-page" class="page">
+        <div class="dashboard-heading">
+          <div>
+            <h2>Customers</h2>
+            <p>Build and manage your customer relationships.</p>
+          </div>
+          <button class="primary-button" id="customers-add-btn">＋ Add customer</button>
+        </div>
+        <div class="empty-state">
+          <div class="empty-icon">♙</div>
+          <h3>Your customers will appear here</h3>
+          <p>Save customer details to keep your business organized.</p>
+          <button class="primary-button" id="empty-add-customer">Add your first customer</button>
+        </div>
+      </section>
+       <div class="modal-overlay" id="product-modal">
+
+  <div class="product-modal">
+
+    <div class="modal-header">
+      <div>
+        <h3>Add a new product</h3>
+        <p>Create a listing for your business.</p>
+      </div>
+
+      <button class="close-modal" id="close-product-modal">×</button>
+    </div>
+
+    <form id="product-form">
+
+      <div class="form-group">
+        <label for="product-name">Product name</label>
+        <input type="text" id="product-name" placeholder="e.g. Chocolate Cake" required="">
+      </div>
+
+      <div class="form-row">
+
+        <div class="form-group">
+          <label for="product-price">Price (₹)</label>
+          <input type="number" id="product-price" placeholder="850" required="">
+        </div>
+
+        <div class="form-group">
+          <label for="product-category-input">Category</label>
+          <select id="product-category-input" required="">
+            <option value="">Select category</option>
+            <option value="Bakery">Bakery</option>
+            <option value="Gift">Gift</option>
+            <option value="Handmade">Handmade</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="form-group">
+        <label for="product-description">Description</label>
+        <textarea id="product-description" placeholder="Describe your product..." rows="3"></textarea>
+      </div>
+
+      <button type="submit" class="primary-button full-width">
+        Add product
+      </button>
+
+    </form>
+
+  </div>
+
+</div>
+    </main>
+  </div>
+
+  <script src="./MicroMarket _ Business Dashboard_files/script.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
